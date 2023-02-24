@@ -438,8 +438,8 @@ class FPEval(COCOeval):
                         "dtMatches": dtMatches,
                     }
 
-                    tpSum = np.cumsum(tps, axis=2).astype(dtype=np.float)
-                    fpSum = np.cumsum(fps, axis=2).astype(dtype=np.float)
+                    tpSum = np.cumsum(tps, axis=2).astype(dtype=float)
+                    fpSum = np.cumsum(fps, axis=2).astype(dtype=float)
 
                     for iouThrIdx in range(numIous):
                         for f1Idx in range(numF1s):
